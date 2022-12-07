@@ -9,7 +9,58 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+    <!--Visible on page load/refresh - hidden when 'Play Now' btn cliked-->
+    <section id="welcome-section">
+        <h2>Wecome</h2>
+        <p>PLease enter your username</p>
+        <form action="">
+            <input type="name">
+            <input type="button" value="">
+        </form>
+        <h3>How to Play</h3>
+        <p>play the game instructions</p>
+        <button class="launch-btn">Play Now</button>
+    </section>
+    <!--Visible only when 'Play Now' btn cliked-->
+    <section id="game-section">
+        <div id="player-side-container">
+            <div class="display" id="player-display"></div>
+            <p>username</p>
+            <p>score:</p>
+        </div>
+        <div id="computer-side-container">
+            <div class="display" id="computer-display"></div>
+            <p>username</p>
+            <p>score:</p>
+        </div>
+        <div id="button-container">
+            <span class="button-holder">
+                <button class="option-button" id="rock-button">Rock</button>
+            </span>
+            <span class="button-holder">
+                <button class="option-button" id="paper-button">Paper</button>
+            </span>
+            <span class="button-holder">
+                <button class="option-button" id="scissors-button">Scissors</button>
+            </span>
+        </div>
+    </section>
+    <!-- Button just for testing js links correctly-->
     <button id ='link-test'>RockPaperScissors</button>
+    <footer>
+        <p>Nat Thomson</p>
+        <div class="drop-up-help">
+            <button class="help-btn">Help</button>
+            <div class="drop-up-content">
+                <h3>Hints & Tips</h3>
+                <p>A bunch of hints and tips</p>
+            </div>
+        </div>
+    </footer>
+    
     
 </body>
 </html>
