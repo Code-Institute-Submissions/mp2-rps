@@ -2,3 +2,11 @@
     background-color: black;
     color: green;
 }
+
+#welcome-section {
+    
+}
+
+#game-section {
+    display: none;
+}
