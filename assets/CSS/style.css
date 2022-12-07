@@ -2,15 +2,14 @@
     background-color: black;
     color: green;
 }
+#game-section {
+    display: none;
+}
 
 #welcome-section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#game-section {
-    display: none;
 }
 
 footer {
@@ -19,7 +18,7 @@ footer {
     position: fixed;
     bottom: 0;
 }
-/*
+
 .drop-up-content {
     visibility: hidden;
 }
