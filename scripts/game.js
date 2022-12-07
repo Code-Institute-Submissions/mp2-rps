@@ -5,6 +5,6 @@ document.getElementById('launch-btn').addEventListener('click', () => {
 });
 //goes back to the welcome section on reset btn click
 document.getElementById('reset-btn').addEventListener('click', () => {
-    document.getElementById('welcome-section').style.display = 'block'
+    document.getElementById('welcome-section').style.display = 'flex'
     document.getElementById('game-section').style.display = 'hidden'
 });

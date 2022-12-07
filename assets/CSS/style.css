@@ -4,9 +4,22 @@
 }
 
 #welcome-section {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #game-section {
     display: none;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+/*
+.drop-up-content {
+    visibility: hidden;
 }
