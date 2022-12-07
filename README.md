@@ -30,6 +30,9 @@ Repository:
 5. [Bugs](#bugs)
 
 bug 1 - when reset btn clicked, game-section does not revert to display: none
+FIX - wrong keyword present in game.js line 9 - display: hidden - corrected to display: none
+
+
 
 6. [Deployment](#deployment)
 
