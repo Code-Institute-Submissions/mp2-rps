@@ -48,7 +48,7 @@ ___
 ## UX
 
 ### Purpose of Project
-
+The purpose of this project is to create a website in which a user can play a fun game of Rock, Paper, Scissors. The user interface sbould provide a simple, easy to understand format in which to play said game. The user should be able to understand how to interact with the website with minimal isntructions however clear instructions should be provided and clear to understand in the event that the user needs some additional assistance. 
 ___
 ### User Stories
 The user will:
