@@ -8,3 +8,24 @@ document.getElementById('reset-btn').addEventListener('click', () => {
     document.getElementById('game-section').style.display = 'none'
     document.getElementById('welcome-section').style.display = 'flex'
 });
+
+
+//game button event listenners
+const rock = document.getElementById('rock-button').addEventListener('click', () => {
+    alert('player chose rock')
+    return 1
+});
+const paper = document.getElementById('paper-button').addEventListener('click', () => {
+    alert('player chose paper')
+    return 2
+});
+const scissors = document.getElementById('scissors-button').addEventListener('click', () => {
+    alert('player chose scissors')
+    return 3
+});
+
+
+function computerChoice() {
+    let randomChoice = Math.floor(Math.random()*3+1)
+    console.log(randomChoice)     
+}
