@@ -4,10 +4,10 @@ document.getElementById('launch-btn').addEventListener('click', () => {
     document.getElementById('welcome-section').style.display = 'none'
 });
 //goes back to the welcome section on reset btn click
-document.getElementById('reset-btn').addEventListener('click', () => {
-    document.getElementById('game-section').style.display = 'none'
-    document.getElementById('welcome-section').style.display = 'flex'
-});
+//document.getElementById('reset-btn').addEventListener('click', () => {
+//    document.getElementById('game-section').style.display = 'none'
+//    document.getElementById('welcome-section').style.display = 'flex'
+//});
 
 
 //game button event listenners
@@ -23,9 +23,10 @@ const scissors = document.getElementById('scissors-button').addEventListener('cl
     alert('player chose scissors')
     return 3
 });
-
-
-function computerChoice() {
-    let randomChoice = Math.floor(Math.random()*3+1)
-    console.log(randomChoice)     
+let computerChoice = randomNumber()
+function randomNumber() {
+    let random = Math.floor(Math.random()*3+1)
+    return random
 }
+
+console.log(computerChoice)
