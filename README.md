@@ -29,6 +29,8 @@ Repository:
 
 5. [Bugs](#bugs)
 
+bug 1 - when reset btn clicked, game-section does not revert to display: none
+
 6. [Deployment](#deployment)
 
 7. [Credits](#credits) 
