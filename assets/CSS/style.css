@@ -1,11 +1,22 @@
 * {
+    padding: 0;
+    margin: 0;
+
+    /*-----in place just while writing other styes for ease on eyes-----*/
     background-color: black;
     color: green;
 }
+
 #game-section {
     display: none;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*------Welcome section styling-----*/
 #welcome-section {
     display: flex;
     justify-content: center;
@@ -22,3 +33,20 @@ footer {
 .drop-up-content {
     visibility: hidden;
 }
+
+/*-----Game section styling------*/
+
+#player-side-container {
+    display: flex;
+    align-items: flex-start;
+    float: left;
+}
+
+#computer-side-container {
+    display: flex;
+    align-items: flex-start;
+    float: right;
+}
+
+/*-----footer styling------*/
+
