@@ -1,8 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+}
 
-    /*-----in place just while writing other styes for ease on eyes-----*/
+body {
     background-color: black;
     color: green;
 }
@@ -19,9 +20,34 @@ h1 {
 /*------Welcome section styling-----*/
 #welcome-section {
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
+
+.border-container {
+    border: solid 3px;
+    border-color: green;
+    height: auto;
+    width: max-content;
+    padding: 5rem;
+}
+
+
+
+/*-----Game section styling------*/
+
+#player-side-container {
+    justify-content: center;
+}
+
+#computer-side-container {
+    display: flex;
+    align-items: flex-start;
+    float: right;
+}
+
+/*-----footer styling------*/
 
 footer {
     display: inline-flex;
@@ -34,19 +60,10 @@ footer {
     visibility: hidden;
 }
 
-/*-----Game section styling------*/
+/*-----media queries------*/
 
-#player-side-container {
-    display: flex;
-    align-items: flex-start;
-    float: left;
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgba(26, 25, 25, 0.255);
+    } 
 }
-
-#computer-side-container {
-    display: flex;
-    align-items: flex-start;
-    float: right;
-}
-
-/*-----footer styling------*/
-
