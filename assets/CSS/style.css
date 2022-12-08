@@ -40,21 +40,30 @@ h1 {
 /*-----Game section styling------*/
 
 #game-section {
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+}
+
+
+#player-side-container {
+    float: left;
+    width: 200px;
+    margin: 5px;
+}
+
+#computer-side-container {
+    float: right;
+    width: 200px;
+    margin: 5px;
+}
+
+#button-container {
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
 
-
-#player-side-container {
-    justify-content: center;
-}
-
-#computer-side-container {
-    display: flex;
-    align-items: flex-start;
-    float: right;
-}
 
 /*-----footer styling------*/
 
@@ -100,16 +109,9 @@ footer {
 
 /*-----display styling tests------*/
 
-.display {
-    width: 80px;
-    height: auto;
-    border: solid 3px;
-    border-radius: 50%;
-    border-color: green;
-}
-
 .basic-rock {
-    object-fit: cover;
+    width: 200px;
+    height: auto;
 }
 /*-----media queries------*/
 
