@@ -97,6 +97,20 @@ footer {
 .foot-btn:hover {
     background-color: blue;
 }
+
+/*-----display styling tests------*/
+
+.display {
+    width: 80px;
+    height: auto;
+    border: solid 3px;
+    border-radius: 50%;
+    border-color: green;
+}
+
+.basic-rock {
+    object-fit: cover;
+}
 /*-----media queries------*/
 
 @media screen and (max-width: 600px) {
