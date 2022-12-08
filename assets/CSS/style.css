@@ -75,4 +75,10 @@ footer {
     body {
         background-color: rgba(26, 25, 25, 0.255);
     } 
+    .drop-up-help {
+        float: none;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
 }
