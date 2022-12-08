@@ -9,24 +9,46 @@ document.getElementById('launch-btn').addEventListener('click', () => {
 //    document.getElementById('welcome-section').style.display = 'flex'
 //});
 
+//KEY 1 = rock, 2 = paper, 3 = scissors
 
-//game button event listenners
-const rock = document.getElementById('rock-button').addEventListener('click', () => {
-    alert('player chose rock')
-    return 1
-});
-const paper = document.getElementById('paper-button').addEventListener('click', () => {
-    alert('player chose paper')
-    return 2
-});
-const scissors = document.getElementById('scissors-button').addEventListener('click', () => {
-    alert('player chose scissors')
-    return 3
-});
-let computerChoice = randomNumber()
-function randomNumber() {
-    let random = Math.floor(Math.random()*3+1)
-    return random
+let playerChoice
+
+choice1 = document.getElementById('rock-button').addEventListener('click', () => {
+    playerChoice = parseInt('1')
+    testFunc()
+    getRandom()
+    compare()
+    console.log('player choise rock')
+})
+
+choice2 = document.getElementById('paper-button').addEventListener('click', () => {
+    playerChoice = 'paper'
+    //console.log(playerChoice)
+})
+
+choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
+    playerChoice = 'scissors'
+   //console.log(playerChoice)
+})
+
+function testFunc() {
+    if (playerChoice === 'rock') {
+        //console.log('this works')
+    }
 }
 
-console.log(computerChoice)
+
+function getRandom(){
+    randomChoice = Math.floor(Math.random()*3+1)
+    //console.log(randomChoice)
+}
+
+function compare() {
+    console.log(playerChoice)
+    console.log(randomChoice)
+    if (playerChoice !== randomChoice) {
+        console.log('no tie') 
+    } else {
+        console.log('tie')
+    }
+}
