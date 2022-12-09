@@ -23,6 +23,7 @@ choice1 = document.getElementById('rock-button').addEventListener('click', () =>
     playerChoice = parseInt('1')
     computerChoice()
     compare()
+    clearWinMessage()
     //console.log('player choise rock')
 });
 choice2 = document.getElementById('paper-button').addEventListener('click', () => {
@@ -81,6 +82,10 @@ let playerScore = document.getElementById('player-score')
 let playerNumber = playerScore.innerHTML
 playerNumber++
 playerScore.innerHTML = playerNumber
+document.getElementById('user-message').innerHTML = '<p>You win!</p>'
+setTimeout(function(){
+    document.getElementById('user-message').innerHTML = "";
+    },800);
 }
 
 function incrementcomputerScore() {
@@ -88,4 +93,10 @@ function incrementcomputerScore() {
     let computerNumber = letComputerScore.innerHTML
     computerNumber++
     letComputerScore.innerHTML = computerNumber
-}
+    document.getElementById('computer-message').innerHTML = '<p>Computer Wins!</p>'
+    setTimeout(function(){
+        document.getElementById('computer-message').innerHTML = "";
+        },800);
+       }
+
+

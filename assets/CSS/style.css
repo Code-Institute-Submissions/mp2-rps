@@ -110,7 +110,8 @@ footer {
 
 .drop-up-help {
     position: relative;
-    float: right;  
+    float: right; 
+    right: 50px;
 }
 
 .drop-up-content {
@@ -120,6 +121,7 @@ footer {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: inherit;
 }
 
 .drop-up-content h3 {
@@ -139,7 +141,7 @@ footer {
     display: block;
 }
 .foot-btn:hover {
-    background-color: blue;
+    background-color: green;
 }
 
 /*-----display styling tests------*/
