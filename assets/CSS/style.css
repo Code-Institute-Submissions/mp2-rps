@@ -4,18 +4,21 @@
 }
 
 body {
-    background-color: black;
-    color: green;
+    background-image: url('/assets/images/potential-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
     overflow-x: hidden;
 }
 
 #game-section {
     display: none;
+    line-height: 500px;
 }
 
 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     margin-bottom: 50px;
 }
 
@@ -25,6 +28,10 @@ h1 {
     align-items: center;
     text-align: center;
     flex-direction: column;
+}
+
+#welcome-section h2, h3, form,  p {
+    padding-bottom: 10px;
 }
 
 .border-container {
@@ -51,14 +58,14 @@ h1 {
     float: left;
     width: 200px;
     margin: 5px;
-    height: max-content;
+    height: 140px;
 }
 
 #computer-side-container {
     float: right;
     width: 200px;
     margin: 5px;
-    height: max-content;
+    height: 140px;
 }
 
 #button-container {

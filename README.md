@@ -34,7 +34,7 @@ FIX - wrong keyword present in game.js line 9 - display: hidden - corrected to d
 
 bug 2 - rock image will not fit inside container div
 
-
+BUG 3 - drop-up-content runs off the screen
 
 6. [Deployment](#deployment)
 
