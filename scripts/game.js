@@ -111,3 +111,11 @@ function incrementcomputerScore() {
 
 let playerIcon = document.getElementById('player-display')
 let computerIcon = document.getElementById('computer-display')
+
+function dragonTest() {
+    let userName = document.forms['user-entry-form']['user-entry'].value
+
+    if (userName == 'dragon') {
+        console.log('THE DRSGONS ARE COMING')
+    }
+}

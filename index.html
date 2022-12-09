@@ -17,13 +17,14 @@
         <div class="border-container">
             <h2>Wecome</h2>
             <p>PLease enter your username</p>
-            <form action="">
-                <input type="name">
-                <input type="button" value="submit">
+            <form name="user-entry-form" id="user-entry-form" method="get" onsubmit="return dragonTest()">
+                <input id="user-entry" type="name" name="username" required>
+                <br>
+                <input id="sub-btn" class="box-btn" type="submit" value="submit">
             </form>
             <h3>How to Play</h3>
             <p>play the game instructions</p>
-            <button id="launch-btn">Play Now</button>
+            <button id="launch-btn" class="box-btn" >Play Now</button>
         </div>
     </section>
     <!--Visible only when 'Play Now' btn cliked-->
