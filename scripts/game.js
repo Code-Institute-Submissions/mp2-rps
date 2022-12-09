@@ -23,19 +23,21 @@ choice1 = document.getElementById('rock-button').addEventListener('click', () =>
     playerChoice = parseInt('1')
     computerChoice()
     compare()
-    clearWinMessage()
+    playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/basic-icons/rock.png" alt="rock">'
     //console.log('player choise rock')
 });
 choice2 = document.getElementById('paper-button').addEventListener('click', () => {
     playerChoice = parseInt('2')
     computerChoice()
     compare()
+    playerIcon.innerHTML = '<img class ="basic-paper" src="/assets/images/basic-icons/paper.png" alt="paper">'
     //console.log('player choise papier')
 });
 choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
     playerChoice = parseInt('3')
     computerChoice()
     compare()
+    playerIcon.innerHTML = '<img class="basic-scissors" src="/assets/images/basic-icons/scissors.png" alt="scissors">'
     //console.log('player choise scissors')
 });
 
@@ -100,3 +102,5 @@ function incrementcomputerScore() {
        }
 
 
+let playerIcon = document.getElementById('player-display')
+let computerIcon = document.getElementById('computer-display')

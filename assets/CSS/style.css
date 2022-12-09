@@ -152,6 +152,16 @@ footer {
     width: 200px;
     height: auto;
 }
+
+.basic-paper {
+    width: 200px;
+    height: auto;
+}
+
+.basic-scissors {
+    width: 200px;
+    height: auto;
+}
 /*-----media queries------*/
 
 @media screen and (max-width: 600px) {
