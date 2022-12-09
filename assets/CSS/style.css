@@ -101,6 +101,9 @@ p {
     line-height: 450px;
 }
 
+#game-section p {
+    font-size: 2rem;
+}
 
 /*-----footer styling------*/
 
