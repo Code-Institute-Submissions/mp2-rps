@@ -44,6 +44,13 @@ choice3 = document.getElementById('scissors-button').addEventListener('click', (
 //gets random number between 1 and 3
 function computerChoice(){
     randomChoice = Math.floor(Math.random()*3+1)
+    if (randomChoice === 1) {
+        computerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/basic-icons/rock.png" alt="rock">'
+    } else if (randomChoice === 2) {
+        computerIcon.innerHTML = '<img class ="basic-paper" src="/assets/images/basic-icons/paper.png" alt="paper">'
+    } else if(randomChoice ===3) {
+        computerIcon.innerHTML = '<img class="basic-scissors" src="/assets/images/basic-icons/scissors.png" alt="scissors">'
+    }
 }
 
 function compare() {
