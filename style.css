@@ -188,7 +188,20 @@ footer {
     #button-container {
         line-height: 240px;
     }
+    .border-container {
+        border: none;
+        width: 250px;
+    } 
+    h1 {
+        font-size: 3rem;
+        letter-spacing: normal;
+        margin-bottom: 10px;
+    }   
+    #game-section {
+        line-height: 200px;
+    }
 }
+
 
 /*-----buttons------*/
 
