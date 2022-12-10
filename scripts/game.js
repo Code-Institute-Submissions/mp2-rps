@@ -114,7 +114,7 @@ let playerIcon = document.getElementById('player-display')
 let computerIcon = document.getElementById('computer-display')
 
 function tieFunc() {
-    document.getElementById('user-message').innerHTML = '<p>A TIE!</p>'
+    document.getElementById('user-message').innerHTML = '<p>A Tie!</p>'
     setTimeout(function(){
         document.getElementById('user-message').innerHTML = "";
         },900);
