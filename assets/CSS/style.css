@@ -55,8 +55,8 @@ p {
     flex-direction: column;
 }
 
-#welcome-section h2, h3, form,  p {
-    padding-bottom: 10px;
+#welcome-section h2, h3, p {
+    padding-bottom: 8px;
 }
 
 .border-container {
@@ -191,16 +191,24 @@ footer {
 /*-----buttons------*/
 
 .box-btn {
-    height: 30px;
-    padding: 3px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    height: fit-content;
     color: whitesmoke;
-    background-color: rgba(90, 84, 84, 0.767);   
+    background-color: rgba(255, 255, 255, 0);   
     vertical-align: middle;
     border-radius: 9px;
-    margin-top: 15px;
-    width: 80px;
+    margin-top: 9px;
+    width: max-content;
+    border-style: none;
+    cursor: pointer;
 }
 
 .box-btn:hover {
-    
+    color: green;
+    font-size: 1.4rem;
+}
+
+.how-to-text {
+    width: 280px;
 }
