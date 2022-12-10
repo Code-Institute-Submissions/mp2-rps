@@ -23,21 +23,21 @@ choice1 = document.getElementById('rock-button').addEventListener('click', () =>
     playerChoice = parseInt('1')
     computerChoice()
     compare()
-    playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/basic-icons/rock.png" alt="rock">'
+    playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/basic-icons/rock.png" alt="rock">'
     //console.log('player choise rock')
 });
 choice2 = document.getElementById('paper-button').addEventListener('click', () => {
     playerChoice = parseInt('2')
     computerChoice()
     compare()
-    playerIcon.innerHTML = '<img class ="basic-paper" src="/assets/images/basic-icons/paper.png" alt="paper">'
+    playerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
     //console.log('player choise papier')
 });
 choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
     playerChoice = parseInt('3')
     computerChoice()
     compare()
-    playerIcon.innerHTML = '<img class="basic-scissors" src="/assets/images/basic-icons/scissors.png" alt="scissors">'
+    playerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
     //console.log('player choise scissors')
 });
 
@@ -45,11 +45,11 @@ choice3 = document.getElementById('scissors-button').addEventListener('click', (
 function computerChoice(){
     randomChoice = Math.floor(Math.random()*3+1)
     if (randomChoice === 1) {
-        computerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/basic-icons/rock.png" alt="rock">'
+        computerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/basic-icons/rock.png" alt="rock">'
     } else if (randomChoice === 2) {
-        computerIcon.innerHTML = '<img class ="basic-paper" src="/assets/images/basic-icons/paper.png" alt="paper">'
+        computerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
     } else if(randomChoice ===3) {
-        computerIcon.innerHTML = '<img class="basic-scissors" src="/assets/images/basic-icons/scissors.png" alt="scissors">'
+        computerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
     }
 }
 
@@ -127,20 +127,20 @@ let keyHandler = function (event) {
             playerChoice = parseInt('1')
             computerChoice()
             incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-rock.png" alt="anime rock">'
+            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-rock.png" alt="anime rock">'
         })
         
         choice2 = document.getElementById('paper-button').addEventListener('click', () => {
             playerChoice = parseInt('2')
             computerChoice()
             incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-paper.png" alt="anime paper">'
+            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-paper.png" alt="anime paper">'
         });
         choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
             playerChoice = parseInt('3')
             computerChoice()
             incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-scissors.png" alt="anime scissors">'
+            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-scissors.png" alt="anime scissors">'
         });
 	}
 };
