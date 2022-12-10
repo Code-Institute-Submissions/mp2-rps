@@ -57,6 +57,7 @@ function compare() {
     console.log(playerChoice)
     console.log(randomChoice)
     if (playerChoice === randomChoice) {
+        tieFunc()
         console.log('you both chose the same')
     } else if (playerChoice === 1 && randomChoice === 2) {
         incrementcomputerScore()
@@ -94,7 +95,7 @@ playerScore.innerHTML = playerNumber
 document.getElementById('user-message').innerHTML = '<p>You win!</p>'
 setTimeout(function(){
     document.getElementById('user-message').innerHTML = "";
-    },800);
+    },900);
 }
 
 function incrementcomputerScore() {
@@ -105,10 +106,20 @@ function incrementcomputerScore() {
     document.getElementById('computer-message').innerHTML = '<p>Computer Wins!</p>'
     setTimeout(function(){
         document.getElementById('computer-message').innerHTML = "";
-        },800);
+        },900);
        }
 
 
 let playerIcon = document.getElementById('player-display')
 let computerIcon = document.getElementById('computer-display')
 
+function tieFunc() {
+    document.getElementById('user-message').innerHTML = '<p>A TIE!</p>'
+    setTimeout(function(){
+        document.getElementById('user-message').innerHTML = "";
+        },900);
+    document.getElementById('computer-message').innerHTML = '<p>Nobody Wins!</p>'
+    setTimeout(function(){
+        document.getElementById('computer-message').innerHTML = "";
+        },900);
+}
