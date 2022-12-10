@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;500;600&family=Nunito+Sans:wght@200;400&display=swap');
 
+/*------General styling-----*/
+
 * {
     padding: 0;
     margin: 0;
@@ -16,10 +18,7 @@ body {
     overflow-y: hidden;
 }
 
-#game-section {
-    display: none;
-    line-height: 500px;
-}
+/*------text/font styling-----*/
 
 h1 {
     text-align: center;
@@ -59,6 +58,10 @@ p {
     padding-bottom: 8px;
 }
 
+.how-to-text {
+    width: 280px;
+}
+
 .border-container {
     border: solid 3px;
     border-color: green;
@@ -68,16 +71,15 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-
-
 /*-----Game section styling------*/
 
 #game-section {
+    display: none;
+    line-height: 500px;
     margin: 0 auto;
     text-align: center;
     width: 450px;
 }
-
 
 #player-side-container {
     float: left;
@@ -153,11 +155,11 @@ footer {
 .drop-up-help:hover .drop-up-content {
     display: block;
 }
-.foot-btn:hover {
-    background-color: green;
-}
-
 /*-----display styling tests------*/
+
+.hidden-rock {
+    visibility: hidden;
+}
 
 .basic-rock {
     width: 200px;
@@ -214,10 +216,6 @@ footer {
     background-color: green;
 }
 
-.how-to-text {
-    width: 280px;
-}
-
-.hidden-rock {
-    visibility: hidden;
+.foot-btn:hover {
+    background-color: green;
 }
