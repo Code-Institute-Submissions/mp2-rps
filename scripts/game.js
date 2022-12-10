@@ -54,38 +54,22 @@ function computerChoice(){
 }
 
 function compare() {
-    console.log(playerChoice)
-    console.log(randomChoice)
     if (playerChoice === randomChoice) {
         tieFunc()
-        console.log('you both chose the same')
     } else if (playerChoice === 1 && randomChoice === 2) {
         incrementcomputerScore()
-        console.log('computer wins, you chose rock and the computer chose paper')
     } else if (playerChoice === 1 && randomChoice === 3) {
         incrementPlayerScore()
-        console.log('user wins, you chose rock and the computer chose scissors')
     } else if (playerChoice === 2 && randomChoice === 3) {
         incrementcomputerScore()
-        console.log('computer wins, you chose paper and the computer chose scissors')
     } else if (playerChoice === 2 && randomChoice === 1) {
         incrementPlayerScore()
-        console.log('user wins, you chose paper and the computer chose rock')
     } else if (playerChoice === 3 && randomChoice === 1) {
         incrementcomputerScore()
-        console.log('computer wins, you chose scissors and the computer chose rock')
     } else if (playerChoice === 3 && randomChoice === 2) {
         incrementPlayerScore()
-        console.log('user wins, you chose scissors and the computer chose paper')
-    }
+    } 
 }
-
-//let addPlayerScore = document.getElementById('player-score').innerText = '0'
-//let addComputerScore = document.getElementById('computer-score').innerText = '0'
-
-//let playerScore = 0
-//let computerScore = 0
-
 
 function incrementPlayerScore() {
 let playerScore = document.getElementById('player-score')
@@ -122,4 +106,43 @@ function tieFunc() {
     setTimeout(function(){
         document.getElementById('computer-message').innerHTML = "";
         },900);
+}
+
+//Konami code copied and modified from gomakethings.com full citation in README
+konami()
+
+function konami() {
+let pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let current = 0;
+let keyHandler = function (event) {
+	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+		current = 0;
+		return;
+	}
+	current++;
+	if (pattern.length === current) {
+		current = 0;
+		window.alert('Easter Egg Found!');
+        choice1 = document.getElementById('rock-button').addEventListener('click', () => {
+            playerChoice = parseInt('1')
+            computerChoice()
+            incrementPlayerScore()
+            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-rock.png" alt="anime rock">'
+        })
+        
+        choice2 = document.getElementById('paper-button').addEventListener('click', () => {
+            playerChoice = parseInt('2')
+            computerChoice()
+            incrementPlayerScore()
+            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-paper.png" alt="anime paper">'
+        });
+        choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
+            playerChoice = parseInt('3')
+            computerChoice()
+            incrementPlayerScore()
+            playerIcon.innerHTML = '<img class="basic-rock" src="/assets/images/anime-mode-images/anime-scissors.png" alt="anime scissors">'
+        });
+	}
+};
+document.addEventListener('keydown', keyHandler, false);
 }
