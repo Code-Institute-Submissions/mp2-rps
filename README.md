@@ -20,8 +20,6 @@ Repository:
 * Wireframes
 
 2. [Technologies Used](#technologies-used)
-* Languages used
-* Frameworks, Libraries & Programs Used 
 
 3. [Testing](#testing)
 
@@ -71,6 +69,14 @@ ___
 ![alt text](/readme-files/rps-wireframe.png)
 
 ## Technologies Used
+* Balsamiq - used for the creation of Wireframes
+* HTML5, CSS3 & Javascript - languages used
+* gitpod.io - IDE for coding 
+* coolors.co - color scheme inspiration
+* google fonts - font choice
+* Dall.e 2 - AI image generation to create the icons for the Konami code easter egg
+* remove.bg - used to remove the background layer on rock, paper, scissors icons
+* tinypng - used for image compression 
 
 
 
