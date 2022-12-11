@@ -9,36 +9,33 @@ document.getElementById('reset-btn').addEventListener('click', () => {
     document.getElementById('welcome-section').style.display = 'flex'
 });
 
-
-/*KEY 1 = rock, 2 = paper, 3 = scissors
-1 beats 3   1 loses to 2
-2 beats 1   2 loses to 3
-3 beats 2   3 loses to 1
-*/
-
+let playerIcon = document.getElementById('player-display')
+let computerIcon = document.getElementById('computer-display')
 let playerChoice
+
+//GAME FUNCTIONS
 
 //event listers for option buttons
 choice1 = document.getElementById('rock-button').addEventListener('click', () => {
-    playerChoice = parseInt('1')
-    computerChoice()
-    compare()
+    playerChoice = parseInt('1');
+    computerChoice();
+    compare();
     playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/basic-icons/rock.png" alt="rock">'
 });
 choice2 = document.getElementById('paper-button').addEventListener('click', () => {
-    playerChoice = parseInt('2')
-    computerChoice()
-    compare()
+    playerChoice = parseInt('2');
+    computerChoice();
+    compare();
     playerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
 });
 choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
-    playerChoice = parseInt('3')
-    computerChoice()
-    compare()
+    playerChoice = parseInt('3');
+    computerChoice();
+    compare();
     playerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
 });
 
-//gets random number between 1 and 3
+//gets random number between 1 and 3 and assigns to appropriate icon for the computer
 function computerChoice() {
     randomChoice = Math.floor(Math.random() * 3 + 1)
     if (randomChoice === 1) {
@@ -47,27 +44,35 @@ function computerChoice() {
         computerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
     } else if (randomChoice === 3) {
         computerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
-    }
-}
-
-function compare() {
-    if (playerChoice === randomChoice) {
-        tieFunc()
-    } else if (playerChoice === 1 && randomChoice === 2) {
-        incrementcomputerScore()
-    } else if (playerChoice === 1 && randomChoice === 3) {
-        incrementPlayerScore()
-    } else if (playerChoice === 2 && randomChoice === 3) {
-        incrementcomputerScore()
-    } else if (playerChoice === 2 && randomChoice === 1) {
-        incrementPlayerScore()
-    } else if (playerChoice === 3 && randomChoice === 1) {
-        incrementcomputerScore()
-    } else if (playerChoice === 3 && randomChoice === 2) {
-        incrementPlayerScore()
     };
 };
 
+/*KEY 1 = rock, 2 = paper, 3 = scissors
+1 beats 3   1 loses to 2
+2 beats 1   2 loses to 3
+3 beats 2   3 loses to 1
+*/
+
+//determins if the user or computer wins or if the game is a tie
+function compare() {
+    if (playerChoice === randomChoice) {
+        tieFunc();
+    } else if (playerChoice === 1 && randomChoice === 2) {
+        incrementcomputerScore();
+    } else if (playerChoice === 1 && randomChoice === 3) {
+        incrementPlayerScore();
+    } else if (playerChoice === 2 && randomChoice === 3) {
+        incrementcomputerScore();
+    } else if (playerChoice === 2 && randomChoice === 1) {
+        incrementPlayerScore();
+    } else if (playerChoice === 3 && randomChoice === 1) {
+        incrementcomputerScore();
+    } else if (playerChoice === 3 && randomChoice === 2) {
+        incrementPlayerScore();
+    };
+};
+
+//updates users score and displays message
 function incrementPlayerScore() {
     let playerScore = document.getElementById('player-score')
     let playerNumber = playerScore.innerHTML
@@ -79,6 +84,7 @@ function incrementPlayerScore() {
     }, 900);
 };
 
+//updates computers score and displays message
 function incrementcomputerScore() {
     letComputerScore = document.getElementById('computer-score')
     let computerNumber = letComputerScore.innerHTML
@@ -90,10 +96,7 @@ function incrementcomputerScore() {
     }, 900);
 };
 
-
-let playerIcon = document.getElementById('player-display')
-let computerIcon = document.getElementById('computer-display')
-
+//displays tie message to the user in case of a tie
 function tieFunc() {
     document.getElementById('user-message').innerHTML = '<p>A Tie!</p>'
     setTimeout(function () {
@@ -105,7 +108,7 @@ function tieFunc() {
     }, 900);
 }
 
-//Konami code copied and modified from gomakethings.com full citation in README
+//Konami code heavily inspired by gomakethings.com full citation in README
 konami();
 
 function konami() {
