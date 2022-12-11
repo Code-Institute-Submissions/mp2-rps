@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;500;600&family=Nunito+Sans:wght@200;400&display=swap');
 
-/*------General styling-----*/
+/*------General-----*/
 
 * {
     padding: 0;
@@ -18,7 +18,7 @@ body {
     overflow-y: hidden;
 }
 
-/*------text/font styling-----*/
+/*------text/fonts-----*/
 
 h1 {
     text-align: center;
@@ -46,7 +46,7 @@ p {
     font-weight: 200;
 }
 
-/*------Welcome section styling-----*/
+/*------Welcome section-----*/
 #welcome-section {
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ p {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*-----Game section styling------*/
+/*-----Game section------*/
 
 #game-section {
     display: none;
@@ -114,8 +114,58 @@ p {
     font-size: 2rem;
 }
 
+/*-----icons------*/
 
-/*-----footer styling------*/
+.hidden-rock {
+    visibility: hidden;
+}
+
+.basic-rock {
+    width: 200px;
+    height: auto;
+}
+
+.basic-paper {
+    width: 200px;
+    height: auto;
+}
+
+.basic-scissors {
+    width: 200px;
+    height: auto;
+}
+
+/*-----Buttons------*/
+
+.box-btn, .foot-btn, .option-button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.3rem;
+    height: fit-content;
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);   
+    vertical-align: middle;
+    border-radius: 7px;
+    margin-top: 9px;
+    width: max-content;
+    border-style: none;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.box-btn:hover {
+    background-color: green;
+}
+
+.option-button:hover {
+    background-color: green;
+}
+
+.foot-btn:hover {
+    background-color: green;
+}
+
+/*-----Footer------*/
 
 footer {
     position: fixed;
@@ -155,27 +205,8 @@ footer {
 .drop-up-help:hover .drop-up-content {
     display: block;
 }
-/*-----display styling tests------*/
 
-.hidden-rock {
-    visibility: hidden;
-}
-
-.basic-rock {
-    width: 200px;
-    height: auto;
-}
-
-.basic-paper {
-    width: 200px;
-    height: auto;
-}
-
-.basic-scissors {
-    width: 200px;
-    height: auto;
-}
-/*-----media queries------*/
+/*-----Media Queries------*/
 
 @media screen and (max-width: 600px) {
     .drop-up-help {
@@ -200,35 +231,4 @@ footer {
     #game-section {
         line-height: 200px;
     }
-}
-
-
-/*-----buttons------*/
-
-.box-btn, .foot-btn, .option-button {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 1.3rem;
-    height: fit-content;
-    color: whitesmoke;
-    background-color: rgba(255, 255, 255, 0);   
-    vertical-align: middle;
-    border-radius: 7px;
-    margin-top: 9px;
-    width: max-content;
-    border-style: none;
-    cursor: pointer;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.box-btn:hover {
-    background-color: green;
-}
-
-.option-button:hover {
-    background-color: green;
-}
-
-.foot-btn:hover {
-    background-color: green;
 }
