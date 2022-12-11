@@ -27,13 +27,6 @@ Repository:
 
 5. [Bugs](#bugs)
 
-bug 1 - when reset btn clicked, game-section does not revert to display: none
-FIX - wrong keyword present in game.js line 9 - display: hidden - corrected to display: none
-
-bug 2 - rock image will not fit inside container div
-
-BUG 3 - drop-up-content runs off the screen
-
 6. [Deployment](#deployment)
 
 7. [Credits](#credits) 
@@ -78,8 +71,6 @@ ___
 * remove.bg - used to remove the background layer on rock, paper, scissors icons
 * tinypng - used for image compression 
 
-
-
 ## Testing
 
 
@@ -91,7 +82,14 @@ ___
 
 ___
 ## Bugs 
-### Fixed 
+bug 1 - when reset btn clicked, game-section does not revert to display: none
+FIX - wrong keyword present in game.js line 9 - display: hidden - corrected to display: none
+
+bug 2 - rock image will not fit inside container div
+FIX - unkown but no longer an issue
+
+BUG 3 - drop-up-content runs off the screen
+FIX - Add right: 50px;
 
 
 ### Post Deployment
