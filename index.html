@@ -12,7 +12,7 @@
     <header>
         <h1>Rock Paper Scissors</h1>
     </header>
-    <!--Visible on page load/refresh - hidden when 'Play Now' btn cliked-->
+    <!--welcome section only visible on page load/refresh - hidden when 'Play Now' btn cliked-->
     <section id="welcome-section">
         <div class="border-container">
             <h2>Wecome</h2>
@@ -21,16 +21,18 @@
             <button id="launch-btn" class="box-btn" >Play Now</button>
         </div>
     </section>
-    <!--Visible only when 'Play Now' btn cliked-->
+    <!--game section only visible only when 'Play Now' btn cliked-->
     <section id="game-section">
+        <!--displays USER icon choice, win/lose message and score -->
         <div id="player-side-container">
             <div class="display" id="player-display">
-                <img class="basic-rock hidden-rock" src="../assets/images/basic-icons/rock.png" alt="rock">
+                <img class="basic-rock hidden-rock" src="./assets/images/basic-icons/rock.png" alt="rock">
             </div>
             <p id="user-message"></p>
-            <p>username</p>
+            <p>You</p>
             <p id="player-score">0</p>
         </div>
+        <!--displays COMPUTER icon choice, win/lose message and score-->
         <div id="computer-side-container">
             <div class="display" id="computer-display">
                 <img class="basic-rock hidden-rock" src="../assets/images/basic-icons/rock.png" alt="rock">
@@ -39,6 +41,7 @@
             <p>computer</p>
             <p id="computer-score">0</p>
         </div>
+        <!--Buttons for choosing rock, paper or scissors-->
         <div id="button-container">
             <span class="button-holder">
                 <button class="option-button" id="rock-button">Rock</button>
@@ -52,6 +55,7 @@
         </div>
     </section>
     <footer>
+        <!--pop up on hover hints and tips and refresh button-->
         <div class="drop-up-help">
             <button class="foot-btn">Help</button>
             <button id="reset-btn" class="foot-btn">Reset</button>
