@@ -54,7 +54,9 @@ p {
     flex-direction: column;
 }
 
-#welcome-section h2, h3, p {
+#welcome-section h2,
+h3,
+p {
     padding-bottom: 8px;
 }
 
@@ -137,12 +139,14 @@ p {
 
 /*-----Buttons------*/
 
-.box-btn, .foot-btn, .option-button {
+.box-btn,
+.foot-btn,
+.option-button {
     font-family: 'Exo 2', sans-serif;
     font-size: 1.3rem;
     height: fit-content;
     color: whitesmoke;
-    background-color: rgba(255, 255, 255, 0);   
+    background-color: rgba(255, 255, 255, 0);
     vertical-align: middle;
     border-radius: 7px;
     margin-top: 9px;
@@ -175,7 +179,7 @@ footer {
 
 .drop-up-help {
     position: relative;
-    float: right; 
+    float: right;
     right: 50px;
 }
 
@@ -184,7 +188,7 @@ footer {
     position: absolute;
     bottom: 50px;
     min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: inherit;
 }
@@ -199,7 +203,7 @@ footer {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    
+
 }
 
 .drop-up-help:hover .drop-up-content {
@@ -216,18 +220,22 @@ footer {
         text-align: center;
         right: 0px;
     }
+
     #button-container {
         line-height: 240px;
     }
+
     .border-container {
         border: none;
         width: 250px;
-    } 
+    }
+
     h1 {
         font-size: 3rem;
         letter-spacing: normal;
         margin-bottom: 10px;
-    }   
+    }
+
     #game-section {
         line-height: 200px;
     }
