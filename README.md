@@ -58,7 +58,7 @@ The user will:
 be able to interact with the user interface easily
 be able to follow the instructions if required 
 be able to play the game
-see a live tally of how many wins they have vs how many the computer has 
+see a live tally of woins/losses against the computer
 ___
 ### Design Choices
 
@@ -68,7 +68,7 @@ ___
 
 ### Wireframes
 
-
+![alt text](/readme-files/rps-wireframe.png)
 
 ## Technologies Used
 
