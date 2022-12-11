@@ -24,31 +24,28 @@ choice1 = document.getElementById('rock-button').addEventListener('click', () =>
     computerChoice()
     compare()
     playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/basic-icons/rock.png" alt="rock">'
-    //console.log('player choise rock')
 });
 choice2 = document.getElementById('paper-button').addEventListener('click', () => {
     playerChoice = parseInt('2')
     computerChoice()
     compare()
     playerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
-    //console.log('player choise papier')
 });
 choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
     playerChoice = parseInt('3')
     computerChoice()
     compare()
     playerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
-    //console.log('player choise scissors')
 });
 
 //gets random number between 1 and 3
-function computerChoice(){
-    randomChoice = Math.floor(Math.random()*3+1)
+function computerChoice() {
+    randomChoice = Math.floor(Math.random() * 3 + 1)
     if (randomChoice === 1) {
         computerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/basic-icons/rock.png" alt="rock">'
     } else if (randomChoice === 2) {
         computerIcon.innerHTML = '<img class ="basic-paper" src="./assets/images/basic-icons/paper.png" alt="paper">'
-    } else if(randomChoice ===3) {
+    } else if (randomChoice === 3) {
         computerIcon.innerHTML = '<img class="basic-scissors" src="./assets/images/basic-icons/scissors.png" alt="scissors">'
     }
 }
@@ -68,19 +65,19 @@ function compare() {
         incrementcomputerScore()
     } else if (playerChoice === 3 && randomChoice === 2) {
         incrementPlayerScore()
-    } 
-}
+    };
+};
 
 function incrementPlayerScore() {
-let playerScore = document.getElementById('player-score')
-let playerNumber = playerScore.innerHTML
-playerNumber++
-playerScore.innerHTML = playerNumber
-document.getElementById('user-message').innerHTML = '<p>You win!</p>'
-setTimeout(function(){
-    document.getElementById('user-message').innerHTML = "";
-    },900);
-}
+    let playerScore = document.getElementById('player-score')
+    let playerNumber = playerScore.innerHTML
+    playerNumber++
+    playerScore.innerHTML = playerNumber
+    document.getElementById('user-message').innerHTML = '<p>You win!</p>'
+    setTimeout(function () {
+        document.getElementById('user-message').innerHTML = "";
+    }, 900);
+};
 
 function incrementcomputerScore() {
     letComputerScore = document.getElementById('computer-score')
@@ -88,10 +85,10 @@ function incrementcomputerScore() {
     computerNumber++
     letComputerScore.innerHTML = computerNumber
     document.getElementById('computer-message').innerHTML = '<p>Computer Wins!</p>'
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById('computer-message').innerHTML = "";
-        },900);
-       }
+    }, 900);
+};
 
 
 let playerIcon = document.getElementById('player-display')
@@ -99,50 +96,50 @@ let computerIcon = document.getElementById('computer-display')
 
 function tieFunc() {
     document.getElementById('user-message').innerHTML = '<p>A Tie!</p>'
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById('user-message').innerHTML = "";
-        },900);
+    }, 900);
     document.getElementById('computer-message').innerHTML = '<p>Nobody Wins!</p>'
-    setTimeout(function(){
+    setTimeout(function () {
         document.getElementById('computer-message').innerHTML = "";
-        },900);
+    }, 900);
 }
 
 //Konami code copied and modified from gomakethings.com full citation in README
-konami()
+konami();
 
 function konami() {
-let pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-let current = 0;
-let keyHandler = function (event) {
-	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-		current = 0;
-		return;
-	}
-	current++;
-	if (pattern.length === current) {
-		current = 0;
-		window.alert('Easter Egg Found!');
-        choice1 = document.getElementById('rock-button').addEventListener('click', () => {
-            playerChoice = parseInt('1')
-            computerChoice()
-            incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-rock.png" alt="anime rock">'
-        })
-        
-        choice2 = document.getElementById('paper-button').addEventListener('click', () => {
-            playerChoice = parseInt('2')
-            computerChoice()
-            incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-paper.png" alt="anime paper">'
-        });
-        choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
-            playerChoice = parseInt('3')
-            computerChoice()
-            incrementPlayerScore()
-            playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-scissors.png" alt="anime scissors">'
-        });
-	}
+    let pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let current = 0;
+    let keyHandler = function (event) {
+        if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+            current = 0;
+            return;
+        }
+        current++;
+        if (pattern.length === current) {
+            current = 0;
+            window.alert('Easter Egg Found!');
+            choice1 = document.getElementById('rock-button').addEventListener('click', () => {
+                playerChoice = parseInt('1');
+                computerChoice();
+                incrementPlayerScore();
+                playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-rock.png" alt="anime rock">'
+            });
+
+            choice2 = document.getElementById('paper-button').addEventListener('click', () => {
+                playerChoice = parseInt('2');
+                computerChoice();
+                incrementPlayerScore();
+                playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-paper.png" alt="anime paper">'
+            });
+            choice3 = document.getElementById('scissors-button').addEventListener('click', () => {
+                playerChoice = parseInt('3');
+                computerChoice();
+                incrementPlayerScore();
+                playerIcon.innerHTML = '<img class="basic-rock" src="./assets/images/anime-mode-images/anime-scissors.png" alt="anime scissors">'
+            });
+        };
+    };
+    document.addEventListener('keydown', keyHandler, false);
 };
-document.addEventListener('keydown', keyHandler, false);
-}
