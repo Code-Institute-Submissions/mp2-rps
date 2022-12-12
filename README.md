@@ -108,6 +108,8 @@ ___
 ___
 ## What I would have done diffenretly 
 
+Given the oppurtunity to start over I would do two things differently. First of all I would stick to my code plan more closely. I spent a lot of time going round in circles when the answer was often in front of me on paper the whole time. 
+Secondly I would focus on the mobile design and resposiveness and scale it up to suit large screens rather than the opposite. I got far too caught up in (quite literally) the big picture. 
 
 ___
 ## Credits
