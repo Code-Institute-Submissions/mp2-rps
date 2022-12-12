@@ -108,10 +108,20 @@ The mobile report was much the same with the exception of the performance which 
 ___
 ## Addressing User Stories
 *be able to interact with the user interface easily*
-The ability to interact with the UI is clearly easy and  
-- be able to play the game without the need for additional instructions
-- see a live tally of wins/losses against the computer
-- have the ability to refresh or exit the game at will
+
+The ability to interact with the UI is clearly easy to do. The buttons are clearly labelled, the font size is of an apporpriate size across all screens and the icons are clear as to what they are. 
+
+*be able to play the game without the need for additional instructions*
+
+Once the Play button is pressed you are presenteed with only three clearly labelled options: rock, paper or scissors. As you hoverover each button the cursor changes to a clearly defined clickable pointer and the button color changes to green heavily implying it is a clickable button. There is therefore very little chance the user would need further instruction. 
+
+*see a live tally of wins/losses against the computer*
+
+Once the user has selected the rock, paper or scissors button a message will pop up above either the You text, Computer text or both in the event of a tie. At the same time the score of the winner iterates by 1 and is displayed below the User and Computer text.
+
+
+*have the ability to refresh or exit the game at will*
+
 
 ___
 ## Bugs 
