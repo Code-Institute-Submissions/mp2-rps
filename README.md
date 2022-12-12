@@ -88,6 +88,8 @@ If (on a desktop) you hover over the bottom-right help button the user is faced 
 
 Testing has taken place at various stages of the development process starting with simple tests like applying a CSS rule to the body of the index.hmtl to see if the file paths are correct. At this stage I also added a Javascript funciton within the game.js file to see if that too linked up correctly with the index.html and style.css files. 
 
+*Live testing of the website has been done in all major browsers and on an imac 27inch display, a 2020 m1 macbook air, and ipad mini, an iphone 12 and an iphone 13 mini.*
+
 ### Validation 
 
 When put through the W3C html validator the following warning was returned:
@@ -143,6 +145,7 @@ FIX - Add right: 50px;
 
 ### Unresolved Bugs
 
+On some screens (notably the iphone 13 mini) when in landscape you need to scroll to see the option buttons. This is not a problem for all mobile screens however as it is not an issue on an iphone 12 or ipad mini. In future I will write a custom media query to suit my tiny phone. 
 
 ___
 
