@@ -18,6 +18,7 @@ Repository:
   - typography
   - imagery
 * Wireframes
+* Additional Features
 
 2. [Technologies Used](#technologies-used)
 
@@ -51,12 +52,18 @@ ___
 ### Design Choices
 
 
-&#11014; &#11014; &#11015; &#11015; &#11013; &#11157; &#11013; &#11157; &#127313; &#127312;
+
 
 
 ### Wireframes
 
 ![alt text](/readme-files/rps-wireframe.png)
+
+### Additional Features
+
+The Konami Code: &#11014; &#11014; &#11015; &#11015; &#11013; &#11157; &#11013; &#11157; &#127313; &#127312;
+
+If (on a desktop) you hover over the bottom-right help button the user is faced with a pop up suggesting you 'think Konami code'. This is a reference to a popular cheat code put in games in the 80s and 90s which when enterred. correctly would give you extra lives or unlimited ammo etc. When entered correctly when playing Rock Paper Scissors; all the icons change to anime style characters and points are worth double.
 
 ## Technologies Used
 * Balsamiq - used for the creation of Wireframes
