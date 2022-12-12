@@ -59,7 +59,9 @@ Although no color pallete was specifically chosen I tried to keep it complimenta
 
 The font chosen is called Exo 2 and is sourced from Google fonts. It is a very modern looking font I feel compliments the modern aesthetic of the website. The font color is whitesmoke #f5f5f5 which is a soft but not dull sahde of white and still manages to stand out against even the lighter shades of gray from the background image. 
 
+*imagery*
 
+The backgorund image is the corner of a particularly dark boxing ring. This anchors the idea of there being some kind of a fight going on. The images chosen to reflect the icon of rock, paper and scissors are purposefully photo-realistic and with their respective backgrounds removed. This is to make it seem as though they are really in the boxing ring. The images for the Konami mode easter egg (see additional features if you haven't found it yet) were designed to look like silly anime characters you might find in pokemon, digimon etc. etc. again suiting the setting provided by the background image. 
 
 ### Wireframes
 
