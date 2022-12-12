@@ -74,6 +74,7 @@ If (on a desktop) you hover over the bottom-right help button the user is faced 
 * Dall.e 2 - AI image generation to create the icons for the Konami code easter egg
 * remove.bg - used to remove the background layer on rock, paper, scissors icons
 * tinypng - used for image compression 
+* Chorme Devtools - used extensively for testing
 
 ## Testing
 
