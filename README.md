@@ -113,16 +113,15 @@ The ability to interact with the UI is clearly easy to do. The buttons are clear
 
 *be able to play the game without the need for additional instructions*
 
-Once the Play button is pressed you are presenteed with only three clearly labelled options: rock, paper or scissors. As you hoverover each button the cursor changes to a clearly defined clickable pointer and the button color changes to green heavily implying it is a clickable button. There is therefore very little chance the user would need further instruction. 
+Once the Play button is pressed you are presented with only three clearly labelled options: rock, paper or scissors. As you hover over each button the cursor changes to a clearly defined clickable pointer and the button color changes to green heavily implying it is a clickable button. There is therefore very little chance the user would need further instruction. 
 
 *see a live tally of wins/losses against the computer*
 
 Once the user has selected the rock, paper or scissors button a message will pop up above either the You text, Computer text or both in the event of a tie. At the same time the score of the winner iterates by 1 and is displayed below the User and Computer text.
 
-
 *have the ability to refresh or exit the game at will*
 
-
+There is a clearly labelled 'reset' button at the bottom right hand corner of the screen. On hover the color changes to green and once pressed it closes the game-page section, reopens the welcome page and the scores are reset.
 ___
 ## Bugs 
 bug 1 - when reset btn clicked, game-section does not revert to display: none
