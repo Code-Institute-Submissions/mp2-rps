@@ -104,9 +104,12 @@ In order to deploy this website you must go to the repository: https://github.co
 ___
 ## Potential Future Development for the Website
 
+In future developments I would like to add more Easter eggs like Dragon mode where all player options are dragons and they beat everything or Hard Mode where none of the buttons have any text and all the user icons appear to be hidden under a blanket. 
+
+Asside from silly features that don't really add to the gameplay I would like to add a High scores section that would require the inputting of a username either on page load on the welcome screen or after a Game Over message that could appear after a timer had run out. 
 
 ___
-## What I would have done diffenretly 
+## What I would have done differently 
 
 Given the oppurtunity to start over I would do two things differently. First of all I would stick to my code plan more closely. I spent a lot of time going round in circles when the answer was often in front of me on paper the whole time. 
 Secondly I would focus on the mobile design and resposiveness and scale it up to suit large screens rather than the opposite. I got far too caught up in (quite literally) the big picture. 
