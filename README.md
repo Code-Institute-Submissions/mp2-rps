@@ -86,6 +86,8 @@ When put through the W3C html validator the following warning was returned:
 ![Alt text](readme-files/html-validator-warning.png)
 The omision of headings for the welcome-section and game-page-section is done so on purpose and the inclusion of headings would infact detract from the appearance of interractivity.
 
+The W3C CSS valdator returns: 
+![Alt text](readme-files/css-validator-result.png)
 ### Desktop Lighthouse report
 ![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_1.jpg) 
 ![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_2.jpg)
@@ -116,14 +118,10 @@ FIX - unkown but no longer an issue
 BUG 3 - drop-up-content runs off the screen
 FIX - Add right: 50px;
 
-
-### Post Deployment
-
-
 ### Unresolved Bugs
-___
-### a note on deployed website
 
+
+___
 
 ## Deployment
 
