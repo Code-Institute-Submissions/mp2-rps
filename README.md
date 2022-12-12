@@ -39,15 +39,15 @@ ___
 ## UX
 
 ### Purpose of Project
-The purpose of this project is to create a website in which a user can play a fun game of Rock, Paper, Scissors against a computer program. The user interface should provide a simple, easy to understand UI in which to play said game. The user should be able to understand how to interact with the website with minimal intruction.
+The purpose of this project is to create a website in which a user can play a fun game of Rock, Paper, Scissors against a computer program. The user interface should provide a simple, easy to understand UI in which to play said game. The user should be able to understand how to interact with the website with minimal intruction. The project should also ensure to keep the repository files clean and easy to manage in the event of revisiting the project to add new features in the future.
 ___
 ### User Stories
 The user will:
 
-be able to interact with the user interface easily
-be able to play the game without the need for additional instructions
-see a live tally of wins/losses against the computer
-ahve the ability to refresh or exit the game at will
+- be able to interact with the user interface easily
+- be able to play the game without the need for additional instructions
+- see a live tally of wins/losses against the computer
+- have the ability to refresh or exit the game at will
 ___
 ### Design Choices
 
@@ -107,7 +107,11 @@ As shown above the desktop report is fairly high. The only issues I feel need ad
 The mobile report was much the same with the exception of the performance which is a dessapointing 78. This is due to the large file sie of the background image. After previous lighthouse reports I compressed the background image and changed file type to .avif whcih helped massively but on mobile it is still an issue. I toyed with the idea of displaying a black backgorund instead but I feel it would detract too much from the pverall aesthetic. 
 ___
 ## Addressing User Stories
-
+*be able to interact with the user interface easily*
+The ability to interact with the UI is clearly easy and  
+- be able to play the game without the need for additional instructions
+- see a live tally of wins/losses against the computer
+- have the ability to refresh or exit the game at will
 
 ___
 ## Bugs 
