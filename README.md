@@ -86,6 +86,8 @@ When put through the W3C html validator the following warning was returned:
 ![Alt text](readme-files/html-validator-warning.png)
 The omision of headings for the welcome-section and game-page-section is done so on purpose and the inclusion of headings would infact detract from the appearance of interractivity.
 
+When put through jshint.com there are no errrors; only some missing semi-colons (whihc JS adds iteself) and some unnassgned variables which are assigned with event handlers or results of functions. 
+
 The W3C CSS valdator returns: 
 ![Alt text](readme-files/css-validator-result.png)
 ### Desktop Lighthouse report
