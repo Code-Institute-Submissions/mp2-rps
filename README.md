@@ -3,11 +3,11 @@
 ### by Nat Thomson
 ---
 
+![Alt text](readme-files/mock-up.png)
 
+Live site: https://natthomson.github.io/mp2-rps/
 
-Live site: 
-
-Repository: 
+Repository: https://github.com/NatThomson/mp2-rps
 
 ## Table of Contents
 1. [UX](#ux)
@@ -51,7 +51,11 @@ The user will:
 ___
 ### Design Choices
 
+**
 
+*Typography*
+
+The font chosen is called Exo 2 and is sourced from Google fonts. It is a very modern looking font I feel compliments the modern aesthetic of the website. The font color is whitesmoke #f5f5f5 which is a soft but not dull sahde of white and still manages to stand out against even the lighter shades of gray from the background image. 
 
 
 
