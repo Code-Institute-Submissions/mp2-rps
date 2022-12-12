@@ -51,7 +51,9 @@ The user will:
 ___
 ### Design Choices
 
-**
+*color scheme*
+
+Although no color pallete was specifically chosen I tried to keep it complimentary to the background image which features lots of dark, muted grays and shadows. The font is a sofft shade of white as discussed below and I've chosen green #008000 as a highlighting color. This is loosely inspired by the Matrix films color pallette. 
 
 *Typography*
 
