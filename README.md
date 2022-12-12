@@ -102,6 +102,7 @@ ___
 
 ## Deployment
 
+In order to deploy this website you must go to the repository: https://github.com/NatThomson/mp2-rps/ > click on settings, located above green gitpod button > click on pages, located on left hand menu > under Build and deployment, source, click to deploy from branch > select main branch. Now back in the repository, when you navigate to 'environments' on the right hand side it will say github-pages. click here and you will be taken to a page with all deployments of the website. the most recent one will be labelled active. Now click VIEW DEPLOYMENT to see the love website. For further information please visit: https://docs.github.com/en/pages/quickstart
 
 ___
 ## Potential Future Development for the Website
