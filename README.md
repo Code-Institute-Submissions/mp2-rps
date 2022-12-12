@@ -30,12 +30,9 @@ Repository:
 6. [Deployment](#deployment)
 
 7. [Credits](#credits) 
-* Code
 * Content
+* Code
 * Media 
-* Research
-* Acknowledgements
-
 
 ___
 ## UX
@@ -54,7 +51,7 @@ ___
 ### Design Choices
 
 
-
+&#11014; &#11014; &#11015; &#11015; &#11013; &#11157; &#11013; &#11157; &#127313; &#127312;
 
 
 ### Wireframes
@@ -114,7 +111,27 @@ ___
 
 ___
 ## Credits
+
 ### Content
+
+With the exception of the code mentioned below, all code was written by myself having drawn inspiration from a variety of sources including but not limited to:
+* Code Instiitute
+* W3schools
+* CodeCademy
+* Web Dev Simplified Youtube channel 
+
+### Code
+
+The piece of code that I drew particularly heavily from was from the following article:
+https://gomakethings.com/how-to-create-a-konami-code-easter-egg-with-vanilla-js/#:~:text=The%20Konami%20Code%20is%20Up,would%20give%20you%2030%20lives
+
+I used this code to implement the Konami code easter egg found when (on a desktop) you type out the Konami code mentioned previously. 
+
+### Media
+
+The icons and backgorund image were taken from Pexels.com and the Konami code icon variants were created using the Dall.e 2 ai using various generator prompts such as “an angry, fighting anthropomorphic pair of scissors, anime”. 
+
 
 ### Personal 
 
+As always credit must be given to my Wife for her continuing support, understanding and encouragement; forcing me to always aim higher. 
