@@ -80,10 +80,21 @@ If (on a desktop) you hover over the bottom-right help button the user is faced 
 
 Testing has taken place at various stages of the development process starting with simple tests like applying a CSS rule to the body of the index.hmtl to see if the file paths are correct. At this stage I also added a Javascript funciton within the game.js file to see if that too linked up correctly with the index.html and style.css files. 
 
+### Desktop Lighthouse report
+![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_1.jpg) 
+![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_2.jpg)
+![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_3.jpg)
+![Alt text](readme-files/Desktop%20Lighthouse%20files/Desktop%20Lighthouse%20RPS1024_4.jpg)
 
+As shown above the desktop report is fairly high. The only issues I feel need addressing. The Accesibility report returns 94 due to the contrast ratio of the footer buttons. I have decide to ignore this as it is a design choice and the contrast is improved on hover. Best practise returns 92 due to a failure to load message logged to the console. This is due to an icon with a hidden image property on it with an improper file path. This although not affecting the appearance or behaviour of the site due to the style rules still being applied to the phantom icon has been resolved since. 
 
+### Mobile Lighthouse report
+![Alt text](readme-files/Mobile%20Lighthouse%20files/Mobile%20Lighthouse%20RPS1024_1.jpg)
+![Alt text](readme-files/Mobile%20Lighthouse%20files/Mobile%20Lighthouse%20RPS1024_2.jpg)
+![Alt text](readme-files/Mobile%20Lighthouse%20files/Mobile%20Lighthouse%20RPS1024_3.jpg)
+![Alt text](readme-files/Mobile%20Lighthouse%20files/Mobile%20Lighthouse%20RPS1024_4.jpg)
 
-
+The mobile report was much the same with the exception of the performance which is a dessapointing 78. This is due to the large file sie of the background image. After previous lighthouse reports I compressed the background image and changed file type to .avif whcih helped massively but on mobile it is still an issue. I toyed with the idea of displaying a black backgorund instead but I feel it would detract too much from the pverall aesthetic. 
 ___
 ## Addressing User Stories
 
